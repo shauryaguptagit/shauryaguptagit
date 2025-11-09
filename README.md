@@ -12,8 +12,6 @@ I am passionate about building scalable and intelligent full-stack applications.
 
 ## 🔧 My Tech Stack
 
-*(For a visual look, you can replace these text lists with badges from [shields.io](https://shields.io/))*
-
 | Category | Technologies |
 | :--- | :--- |
 | **Backend** | Java \| Spring Boot \| Spring Security \| Spring Data JPA \| Python \| Flask \| REST APIs \| SQL |
