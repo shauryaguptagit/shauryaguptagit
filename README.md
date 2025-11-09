@@ -5,7 +5,7 @@ I'm a B.Tech Computer Science student at MSIT, Delhi, with a minor in Artificial
 I am passionate about building scalable and intelligent full-stack applications. My primary interests lie in **Full Stack Development**, **Microservice Architecture**, **FinTech**, and applying **AI/ML** to create practical solutions. I have hands-on experience in architecting systems using Java/Spring Boot for robust back-end services and Python/Flask for lightweight, AI-driven microservices.
 
 * 📫 **How to reach me:** [guptashaurya2004@gmail.com](mailto:guptashaurya2004@gmail.com)
-* 🔗 **Connect with me on LinkedIn:** [linkedin.com/in/your-username-here](https://linkedin.com/in/your-username-here)
+* 🔗 **Connect with me on LinkedIn:** [linkedin.com/in/your-username-here](https://linkedin.com/in/shauryaguptaa)
 * 📍 **Based in:** Ghaziabad
 
 ---
