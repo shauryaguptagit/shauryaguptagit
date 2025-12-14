@@ -1,0 +1,262 @@
+# 🐍 Basic Python Terms — Short Notes
+
+## 1️⃣ Keywords
+
+### What are Keywords?
+
+* **Reserved words** with predefined meaning
+* Used for **specific purposes**
+* Cannot be used as variable names
+
+**Examples**
+
+* `for`, `while` → loops
+* `True`, `False` → Boolean values
+
+📌
+
+> Keywords define the structure and logic of a program.
+
+---
+
+## 2️⃣ Variables
+
+### What is a Variable?
+
+* A **name that refers to a memory location**
+* Used to **store data**
+* User-defined
+
+```python
+x = 5
+```
+
+* `5` is stored in memory
+* `x` points to that memory location
+
+📌 Rules:
+
+* Variable name **cannot be a keyword**
+* Created dynamically in Python
+
+📌
+
+> Variables are references to objects stored in memory.
+
+---
+
+## 3️⃣ Functions
+
+### What is a Function?
+
+* A **sequence of instructions**
+* Performs a **specific task**
+
+📌
+
+> Functions help reuse code and organize logic.
+
+---
+
+### Examples of Built-in Functions
+
+#### `print()`
+
+```python
+print("GFG")
+```
+
+* Takes input (string)
+* Displays output on screen
+
+#### `input()`
+
+```python
+x = input()
+```
+
+* Takes input from keyboard
+* Stores it in variable `x`
+
+---
+
+### Types of Functions
+
+* **Built-in / Library functions**
+* **Third-party functions**
+* **User-defined functions**
+
+---
+
+## 4️⃣ Object-Oriented Programming (OOP)
+
+### What is OOP?
+
+* A programming paradigm
+* Software is built using **objects interacting with each other**
+
+📌
+
+> OOP helps design large and maintainable software.
+
+---
+
+## 5️⃣ Classes
+
+### What is a Class?
+
+* A **blueprint / template**
+* Defines:
+
+  * Data (variables)
+  * Operations (functions)
+
+📌 Example:
+
+* `Student` class → name, roll number, marks
+* `Teacher` class → name, subject, salary
+
+📌
+
+> Class defines what an object should have and do.
+
+---
+
+## 6️⃣ Objects
+
+### What is an Object?
+
+* An **instance of a class**
+* Represents a real entity
+
+📌 Example:
+
+* `student1`, `student2` → objects of `Student` class
+
+📌
+
+> Objects are created from classes.
+
+---
+
+## 7️⃣ Special Feature of Python (Very Important)
+
+### Everything is an Object in Python
+
+```python
+x = 10
+```
+
+* `10` is an object of class `int`
+* `x` refers to that object
+
+📌 Difference from Java / C++:
+
+* Java & C++ have **primitive types**
+* Python has **no primitive types**
+
+📌
+
+> In Python, every variable is an object of some class.
+
+---
+
+## 8️⃣ Modules
+
+### What is a Module?
+
+* A **Python file**
+* Contains related code (functions, variables, classes)
+
+📌
+
+> Modules help organize code into separate files.
+
+---
+
+### Using a Module
+
+```python
+import math
+math.factorial(5)
+```
+
+---
+
+## 9️⃣ Packages
+
+### What is a Package?
+
+* A **folder**
+* Contains:
+
+  * Modules
+  * Sub-packages
+
+📌
+
+> Packages help organize large projects.
+
+---
+
+### Folder Analogy
+
+* Package → Folder
+* Module → File
+* Sub-package → Sub-folder
+
+---
+
+## 🔟 Importing Modules & Packages
+
+### Import Module
+
+```python
+import math
+```
+
+### Import from Package
+
+```python
+import abc.xyz
+import abc.xyz.bcd
+```
+
+* Uses **dot notation**
+* Locates modules using **Python path**
+
+---
+
+## 1️⃣1️⃣ Python Path (Concept)
+
+* A system path used to locate modules
+* Search order:
+
+  1. Current directory
+  2. Standard library
+  3. Paths in `PYTHONPATH`
+
+📌
+
+> Python uses PYTHONPATH to find imported modules.
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* Keywords are reserved words
+* Variables store references to objects
+* Functions perform specific tasks
+* Class is a blueprint
+* Object is an instance
+* Everything in Python is an object
+* Module = file
+* Package = folder
+
+---
+
+## 🎯 One-Line Summary
+
+> Python programs are built using keywords, variables, functions, classes, modules, and packages to create organized, reusable, and scalable software.
+
+---

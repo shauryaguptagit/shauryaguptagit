@@ -1,0 +1,243 @@
+# 🐍 How Python Programs Are Executed — Short Notes
+
+## 1️⃣ Python Source Code
+
+* Python programs are written in **`.py` files**
+* `.py` files are **plain text files**
+* Can be created using:
+
+  * Text editors (Notepad, VI)
+  * IDEs (PyCharm, VS Code, etc.)
+
+📌
+
+> A `.py` file contains Python code written according to Python standards.
+
+---
+
+## 2️⃣ Why Execution is Needed
+
+* CPU understands **only binary (0s and 1s)**
+* Python code must be **converted into executable form**
+
+📌
+
+> Python code must be translated before execution.
+
+---
+
+## 3️⃣ Python Standard vs Implementation (Recall)
+
+* **Python standard** → Language rules
+* **Python implementation** → Software that executes Python code
+
+📌
+
+> Execution depends on the Python implementation being used.
+
+---
+
+## 4️⃣ Execution in Different Implementations (Quick)
+
+* **PyPy** → Uses **Just-In-Time (JIT) compilation**
+* **CPython** → Uses **compilation + interpretation**
+
+👉 Most commonly used: **CPython**
+
+---
+
+## 5️⃣ Python Execution in CPython (Very Important)
+
+### Step-by-Step Flow
+
+1. Programmer writes `program.py`
+2. Python compiler:
+
+   * Converts entire `.py` file into **bytecode**
+   * Bytecode file has `.pyc` extension
+3. Python Interpreter:
+
+   * Executes bytecode **line by line**
+
+📌
+
+> CPython uses both compilation and interpretation.
+
+---
+
+## 6️⃣ What is Bytecode?
+
+* Intermediate, low-level code
+* **Platform-independent**
+* Python-specific
+
+📌
+
+> Bytecode is not machine code, but closer to it.
+
+---
+
+## 7️⃣ Compiler vs Interpreter (Recall)
+
+### Compiler
+
+* Converts **entire code at once**
+* Produces bytecode or binary
+
+### Interpreter
+
+* Executes code **line by line**
+* Stops at first error
+
+📌
+
+> Python uses both compiler and interpreter internally.
+
+---
+
+## 8️⃣ Why Not Simple Compilation Like C/C++?
+
+### C / C++ Execution
+
+* Code → Compiler → **Machine-specific binary**
+* Separate compilation needed for:
+
+  * Windows
+  * Linux
+  * macOS
+
+📌
+
+> C/C++ executables are platform-dependent.
+
+---
+
+## 9️⃣ Platform Independence in Python
+
+### What is a Platform?
+
+* **Operating System + Hardware Architecture**
+
+  * Example: Windows + Intel
+  * Example: Linux + Intel
+
+---
+
+### Python’s Two-Step Advantage
+
+1. Python code → **Bytecode** (platform-independent)
+2. Bytecode → **Machine code** (platform-specific)
+
+📌
+
+> Python achieves portability using bytecode.
+
+---
+
+## 🔟 Python Virtual Machine (PVM)
+
+* Executes Python **bytecode**
+* Platform-specific
+* Must be installed on the system
+
+📌
+
+> Bytecode runs on PVM, not directly on hardware.
+
+---
+
+## 1️⃣1️⃣ Python Execution Flow (Summary)
+
+```
+.py file
+   ↓
+Compilation
+   ↓
+Bytecode (.pyc)
+   ↓
+Python Virtual Machine (PVM)
+   ↓
+Line-by-line execution
+```
+
+---
+
+## 1️⃣2️⃣ Why Python Is Platform Independent
+
+* Bytecode is **same for all platforms**
+* Only **PVM changes per platform**
+
+📌
+
+> “Write once, run anywhere” (with PVM installed).
+
+---
+
+## 1️⃣3️⃣ Running Python from Command Line
+
+### Command Line
+
+* Text-based interface in OS (Windows / Linux / macOS)
+* Used to run commands
+
+### Run Python Program
+
+```bash
+python a.py
+```
+
+📌
+
+> Python must be installed before running the command.
+
+---
+
+## 1️⃣4️⃣ What Happens Behind the Scenes?
+
+* Python compiles `.py` → bytecode
+* Interpreter executes bytecode line by line
+* Output shown on console
+
+---
+
+## 1️⃣5️⃣ IDE vs Command Line
+
+| IDE                | Command Line    |
+| ------------------ | --------------- |
+| Easy execution     | Manual commands |
+| Keyboard shortcuts | More control    |
+| Beginner-friendly  | Low-level       |
+
+📌
+
+> IDEs internally run the same commands.
+
+---
+
+## 1️⃣6️⃣ Generating Only Bytecode (Optional)
+
+* Python provides a command to **only compile**
+* Produces `.pyc` file
+* Does **not execute** code
+
+📌
+
+> `.pyc` files store Python bytecode.
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* Python uses **both compiler and interpreter**
+* Bytecode is **platform-independent**
+* PVM is **platform-dependent**
+* `.py` → `.pyc` → execution
+* Python is portable due to **bytecode + PVM**
+
+---
+
+## 🎯 One-Line Summary
+
+> Python programs are first compiled into platform-independent bytecode and then interpreted line by line by the Python Virtual Machine.
+
+---

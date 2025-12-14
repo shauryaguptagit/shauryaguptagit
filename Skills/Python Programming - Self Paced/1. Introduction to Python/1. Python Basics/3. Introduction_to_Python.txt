@@ -1,0 +1,130 @@
+# 🐍 Introduction to Python — Short Notes
+
+## 1️⃣ What is Python?
+
+* Python is a **high-level, interpreted programming language**
+* Created by **Guido van Rossum**
+* Designed to be **simple, readable, and powerful**
+
+📌 **Viva Line**
+
+> Python is a high-level, interpreted language known for its simplicity and readability.
+
+---
+
+## 2️⃣ Why Python?
+
+Python is used because it:
+
+* Is **easy to learn**
+* Has **English-like syntax**
+* Requires **less code**
+* Is **beginner-friendly**
+* Is also **powerful and flexible**
+
+📌
+
+> Python focuses on developer productivity.
+
+---
+
+## 3️⃣ Features of Python
+
+* **High-Level Language**
+  → No need to manage memory manually
+
+* **Interpreted**
+  → Executes code line by line
+
+* **Simple Syntax**
+  → Easy to read and write
+
+* **Dynamically Typed**
+  → No need to declare variable types
+
+* **Portable**
+  → Same code runs on Windows, Linux, macOS
+
+---
+
+## 4️⃣ Python as an Interpreted Language
+
+### How Python Code Runs
+
+1. Code is written in Python
+2. Interpreter reads **line by line**
+3. Converts to machine code
+4. Executes immediately
+
+📌
+
+> Python does not require separate compilation.
+
+---
+
+## 5️⃣ Python vs Other Languages (Quick)
+
+| Feature     | Python | C / C++ / Java |
+| ----------- | ------ | -------------- |
+| Syntax      | Simple | Complex        |
+| Code length | Short  | Long           |
+| Learning    | Easy   | Moderate–Hard  |
+| Speed       | Slower | Faster         |
+
+📌
+
+> Python trades speed for simplicity and productivity.
+
+---
+
+## 6️⃣ Where is Python Used?
+
+* Web Development
+* Data Science & Analytics
+* Machine Learning & AI
+* Automation & Scripting
+* Scientific Computing
+* Game Development (basic)
+
+---
+
+## 7️⃣ First Python Program
+
+```python
+print("Hello, World!")
+```
+
+📌
+
+> `print()` is used to display output on the screen.
+
+---
+
+## 8️⃣ Why Python is Popular Today
+
+* Huge community support
+* Rich libraries (NumPy, Pandas, TensorFlow)
+* Used by companies like Google, Netflix, Instagram
+* Preferred for **data & AI roles**
+
+---
+
+## 9️⃣ Python for Beginners
+
+* Taught in **schools & colleges**
+* Requires only **logic**, not deep computer science
+* Encourages problem-solving
+
+📌 **One-Line Summary**
+
+> Python is an easy, readable, and powerful programming language used across multiple domains.
+
+---
+
+## 🔥 Exam / Viva Tip
+
+If asked **“Why Python?”**, say:
+
+> Python is easy to learn, has simple syntax, and allows faster development with fewer lines of code.
+
+---

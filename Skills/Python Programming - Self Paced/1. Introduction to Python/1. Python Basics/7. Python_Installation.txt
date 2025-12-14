@@ -1,0 +1,218 @@
+# 🐍 Python Installation & Running Programs — Short Notes
+
+## 1️⃣ Installing Python
+
+### Where to Download Python?
+
+* Official website: **python.org**
+* Search “Python” → first link is python.org
+* Click **Download** → latest version downloads automatically
+
+📌
+
+> Python interpreter is required to run Python programs.
+
+---
+
+### Installation Steps (Windows – Conceptual)
+
+1. Download installer from python.org
+2. Double-click `.exe` file
+3. Click **Install Now**
+4. Finish installation
+
+📌
+
+> After installation, Python interpreter is available on the system.
+
+---
+
+## 2️⃣ What Gets Installed?
+
+* **Python Interpreter**
+* **IDLE (Python’s default IDE)**
+* Python command (`python`) enabled in terminal
+
+📌
+
+> Python interpreter executes `.py` files.
+
+---
+
+## 3️⃣ Writing Python Programs
+
+### Python Source File
+
+* Extension: **`.py`**
+* Plain text file
+* Can be written using:
+
+  * Notepad / VI editor
+  * IDEs (PyCharm, VS Code, IDLE)
+
+📌
+
+> `.py` files contain Python source code.
+
+---
+
+## 4️⃣ IDE (Integrated Development Environment)
+
+### What is an IDE?
+
+* A software that provides:
+
+  * Code editor
+  * Run button
+  * Output window
+  * Debugging & shortcuts
+
+📌
+
+> IDE makes coding faster and easier.
+
+---
+
+### Popular Python IDEs
+
+* **PyCharm** (most popular)
+* **VS Code**
+* **IDLE** (comes with Python)
+
+---
+
+## 5️⃣ Without IDE (Command Line Method)
+
+### Steps
+
+1. Write code in Notepad
+2. Save as `program.py`
+3. Open Command Prompt / Terminal
+4. Run:
+
+```bash
+python program.py
+```
+
+📌
+
+> Python must be installed for this command to work.
+
+---
+
+## 6️⃣ Online Python IDEs
+
+### Example
+
+* **ide.geeksforgeeks.org**
+
+### Advantages
+
+* No installation required
+* Quick practice
+
+### Limitation
+
+* Not fully interactive
+* Input-based programs have restrictions
+
+📌
+
+> Online IDEs are good for beginners but limited.
+
+---
+
+## 7️⃣ First Python Program
+
+```python
+print("Hello World")
+```
+
+### What Happens?
+
+* `print()` is a function
+* Takes a string as input
+* Displays it on the screen
+
+📌
+
+> Python programs can be written in very few lines.
+
+---
+
+## 8️⃣ Why Python is Beginner-Friendly
+
+* No semicolons (`;`)
+* No curly braces (`{}`)
+* Newline ends a statement
+* Uses indentation for blocks
+
+📌
+
+> Python avoids common beginner mistakes found in C/C++/Java.
+
+---
+
+## 9️⃣ Running Code Using IDLE
+
+### Python Shell
+
+* Interactive environment
+* Executes code line by line
+
+```python
+print("Hello World")
+6 + 10
+7 * 8
+```
+
+📌
+
+> Python shell is useful for quick testing.
+
+---
+
+### Running a `.py` File in IDLE
+
+1. Create new file
+2. Write code
+3. Save as `first.py`
+4. Click **Run**
+
+---
+
+## 🔟 Installing PyCharm (IDE)
+
+### Steps (Conceptual)
+
+1. Go to **jetbrains.com**
+2. Download **PyCharm Community Edition (Free)**
+3. Install with default settings
+4. Open PyCharm
+5. Create new project
+6. Create `.py` file
+7. Write code
+8. Right-click → Run
+
+📌
+
+> PyCharm provides a professional Python development environment.
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* Python is installed from python.org
+* `.py` files store Python code
+* Python interpreter executes programs
+* IDE simplifies development
+* `print()` displays output
+* Python uses indentation, not braces
+
+---
+
+## 🎯 One-Line Summary
+
+> Python programs are written in `.py` files, executed by the Python interpreter, and can be run using command line, IDEs, or online tools.
+
+---
