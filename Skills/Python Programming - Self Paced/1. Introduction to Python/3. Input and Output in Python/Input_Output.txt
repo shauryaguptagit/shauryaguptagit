@@ -1,0 +1,232 @@
+## 📘 Module Notes: **`print()` and `input()` Functions in Python**
+
+(Combined notes from both videos – concise & practical)
+
+---
+
+# 🔹 Part 1: `print()` Function
+
+## 1️⃣ What is `print()`?
+
+* `print()` is a **function** used to display output on the **screen / console**
+* It takes values as input and prints them
+
+### Basic Syntax
+
+```python
+print("Hello")
+```
+
+---
+
+## 2️⃣ Printing Multiple Values
+
+* Multiple values can be passed using **commas**
+* By default, values are separated by a **space**
+
+```python
+print("Welcome", "to", "Python")
+# Output: Welcome to Python
+```
+
+---
+
+## 3️⃣ Empty `print()`
+
+* Calling `print()` without arguments prints a **new line**
+
+```python
+print()
+```
+
+---
+
+## 4️⃣ `end` Parameter
+
+* Controls **what is printed after output**
+* Default value: `'\n'` (new line)
+
+### Example
+
+```python
+print("Welcome", end=" ")
+print("GFG")
+# Output: Welcome GFG
+```
+
+✔ No new line after `"Welcome"`
+
+---
+
+## 5️⃣ `sep` Parameter
+
+* Controls **how multiple values are separated**
+* Default separator: space `" "`
+
+### Example
+
+```python
+print(25, 8, 2020, sep="-")
+# Output: 25-8-2020
+```
+
+---
+
+## 6️⃣ Using `sep` and `end` Together
+
+```python
+print(10, 20, 30, sep="+", end=" ")
+print(40, 50)
+```
+
+**Output**
+
+```
+10+20+30 40 50
+```
+
+---
+
+## 🧠 `print()` Summary
+
+| Feature     | Default  | Custom               |
+| ----------- | -------- | -------------------- |
+| Separator   | Space    | `sep="-"`, `sep="+"` |
+| Line ending | New line | `end=" "`            |
+
+---
+
+# 🔹 Part 2: `input()` Function
+
+## 7️⃣ What is `input()`?
+
+* Used to **take input from the user**
+* Program **waits** until user types input and presses **Enter**
+* **Always returns a string**
+
+### Example
+
+```python
+name = input("Enter your name: ")
+print("Welcome", name)
+```
+
+---
+
+## 8️⃣ Multiple Inputs
+
+```python
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+print("Welcome", name)
+print("Your age is", age)
+```
+
+---
+
+## 9️⃣ Important Rule ⚠️
+
+### `input()` ALWAYS returns a **string**
+
+```python
+x = input()
+print(type(x))  # <class 'str'>
+```
+
+---
+
+## 🔟 Why Type Conversion is Needed
+
+If numbers are taken as input:
+
+```python
+x = input()
+y = input()
+print(x + y)
+```
+
+**Input**
+
+```
+10
+20
+```
+
+**Output**
+
+```
+1020   ❌ (string concatenation)
+```
+
+---
+
+## 1️⃣1️⃣ Converting Input to Integer
+
+```python
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+
+print("Sum is", x + y)
+```
+
+✔ Correct numerical addition
+
+---
+
+## 1️⃣2️⃣ Shortcut Conversion
+
+Instead of:
+
+```python
+x = input()
+x = int(x)
+```
+
+Use:
+
+```python
+x = int(input())
+```
+
+---
+
+## 1️⃣3️⃣ `input()` in Online / Competitive Programming
+
+* No prompts (`"Enter number"`)
+* Input comes from **input box / standard input**
+* Output must match **exact format**
+
+### Competitive Programming Style
+
+```python
+x = int(input())
+y = int(input())
+print(x + y)
+```
+
+📌 Avoid extra text like `"Sum is"`
+
+---
+
+## 🧠 `input()` Summary
+
+| Point              | Explanation                            |
+| ------------------ | -------------------------------------- |
+| Blocking           | Program waits for input                |
+| Return type        | Always `str`                           |
+| Numeric input      | Must convert using `int()` / `float()` |
+| Competitive coding | No prompt strings                      |
+
+---
+
+## ✅ Final Key Takeaways (Exam / Viva Ready)
+
+* `print()` → output
+* `input()` → user input (string)
+* `sep` → separator between values
+* `end` → what comes after printing
+* `input()` + numbers → **always convert**
+* No prompts in competitive programming
+
+---
