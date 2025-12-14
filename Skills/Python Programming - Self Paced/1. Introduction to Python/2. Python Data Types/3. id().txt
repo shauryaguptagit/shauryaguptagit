@@ -1,0 +1,193 @@
+# 🐍 `id()` Function & Object Identity — Short Notes
+
+## 1️⃣ What is the `id()` Function?
+
+* `id()` is a **built-in Python function**
+* It returns a **unique identifier for an object**
+* The identifier is **unique during the object’s lifetime**
+
+📌
+
+> `id()` gives the identity of an **object**, not a variable.
+
+---
+
+## 2️⃣ What Does `id()` Represent?
+
+* In **CPython implementation**:
+
+  * `id()` returns the **memory address** of the object
+* Similar to **pointers in C/C++**
+
+📌
+
+> Two active objects can never have the same `id`.
+
+---
+
+## 3️⃣ Variable vs Object (Very Important)
+
+* Variables are **references**
+* `id(variable)` → actually means `id(object referred by variable)`
+
+📌
+
+> `id()` always works on objects, not variable names.
+
+---
+
+## 4️⃣ Example Concept (Single Reference)
+
+* Value `5` is an object
+* It is stored at a memory location
+* `id(5)` → returns its object identity
+
+📌
+
+> Literals are also objects in Python.
+
+---
+
+## 5️⃣ Multiple Variables, Same Object
+
+```text
+a = 10
+b = a
+```
+
+* Only **one object (10)** is created
+* `a` and `b` refer to the **same object**
+
+📌 Result:
+
+* `id(a) == id(b)` → True
+
+📌
+
+> Same object ⇒ same `id`
+
+---
+
+## 6️⃣ Literal Optimization (Interning)
+
+### Integers
+
+```text
+a = 10
+b = 10
+```
+
+* Python stores same literals at **same memory location**
+* Both refer to the same object
+
+📌
+
+> Python reuses objects for identical literals.
+
+---
+
+### Strings
+
+```text
+c = "gfg"
+d = "gfg"
+```
+
+* Same string literal
+* Same object in memory
+
+📌
+
+> Identical string literals share the same object.
+
+---
+
+## 7️⃣ `is` Operator (Identity Check)
+
+### What does `is` do?
+
+* Checks whether **two variables refer to the same object**
+* Compares **identity**, not value
+
+📌
+
+> `is` compares `id()` internally.
+
+---
+
+### Example Concept
+
+```text
+a = 10
+b = 10
+a is b  → True
+```
+
+* Same object
+* Same identity
+
+---
+
+## 8️⃣ Changing Reference Changes Identity
+
+```text
+c = a
+c = 22
+```
+
+* New object `22` is created
+* `c` now refers to a **different object**
+
+📌 Result:
+
+* `c is b` → False
+
+📌
+
+> Reassignment changes reference, not original object.
+
+---
+
+## 9️⃣ Identity vs Equality (Conceptual)
+
+| Check | Meaning     |
+| ----- | ----------- |
+| `is`  | Same object |
+| `==`  | Same value  |
+
+📌
+
+> Two objects can have same value but different identities.
+
+---
+
+## 🔟 Guarantees of `id()`
+
+* During program execution:
+
+  * Two **active objects** cannot share the same `id`
+* Different Python implementations may implement `id()` differently
+* But **uniqueness is guaranteed**
+
+📌
+
+> `id()` is unique for live objects.
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* `id()` returns object identity
+* In CPython, `id()` is memory address
+* Variables are references
+* Same object ⇒ same `id`
+* `is` checks identity, not value
+* Literals may share memory
+
+---
+
+## 🎯 One-Line Summary
+
+> The `id()` function returns a unique identifier for an object, and in CPython it represents the object’s memory address.
+
+---

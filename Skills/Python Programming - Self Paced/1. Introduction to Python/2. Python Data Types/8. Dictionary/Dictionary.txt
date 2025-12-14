@@ -1,0 +1,238 @@
+# 📘 Python Dictionaries — Short & Practical Notes
+
+---
+
+## 1. What is a Dictionary?
+
+A **dictionary** is a collection of **key–value pairs**.
+
+```python
+d = {101: "XYZ", 102: "ABC"}
+```
+
+### Key Characteristics
+
+* Keys must be **unique**
+* Values **can be duplicated**
+* **Unordered** collection
+* Uses **hashing internally**
+* Very **fast lookup by key**
+
+---
+
+## 2. Dictionary vs Set
+
+| Feature         | Set               | Dictionary      |
+| --------------- | ----------------- | --------------- |
+| Stores          | Only values       | Key–Value pairs |
+| Uniqueness      | All values unique | Keys unique     |
+| Values repeated | ❌                 | ✅               |
+| Access method   | No indexing       | By key          |
+| Uses hashing    | ✅                 | ✅               |
+
+---
+
+## 3. Creating a Dictionary
+
+### Using Curly Braces
+
+```python
+d = {110: "ABC", 101: "XYZ", 105: "PQR"}
+```
+
+### Empty Dictionary
+
+```python
+d = {}
+```
+
+⚠️ `{}` creates an **empty dictionary**, not a set.
+
+---
+
+## 4. Keys and Values Rules
+
+* Keys must be **immutable** (int, string, tuple)
+* Values can be **any type**
+* Mixed types allowed, but usually avoided
+
+```python
+d = {1: "A", "two": 2, 3: [10, 20]}
+```
+
+---
+
+## 5. Accessing Values
+
+### Using Square Brackets
+
+```python
+print(d[101])
+```
+
+⚠️ Raises **KeyError** if key not present.
+
+---
+
+## 6. `get()` Method (Safer Way)
+
+```python
+d.get(101)
+```
+
+* Returns value if key exists
+* Returns `None` if key does not exist
+
+```python
+d.get(125)        # None
+```
+
+### With Default Value
+
+```python
+d.get(125, "NA")  # "NA"
+```
+
+✅ **Preferred for safe access**
+
+---
+
+## 7. Checking Key Presence
+
+```python
+101 in d
+```
+
+Best practice before using square brackets:
+
+```python
+if 101 in d:
+    print(d[101])
+```
+
+---
+
+## 8. Adding / Updating Items
+
+### Add New Key–Value Pair
+
+```python
+d["laptop"] = 40000
+```
+
+### Update Existing Key
+
+```python
+d[101] = "WXY"
+```
+
+* Same syntax for insert & update
+* If key exists → value updated
+* If key doesn’t exist → new pair created
+
+---
+
+## 9. Length of Dictionary
+
+```python
+len(d)
+```
+
+➡️ Returns number of **key–value pairs**
+
+---
+
+## 10. Removing Items
+
+### `pop(key)`
+
+```python
+d.pop(105)
+```
+
+* Removes key–value pair
+* **Returns the removed value**
+* Raises error if key not found
+
+---
+
+### `del`
+
+```python
+del d[101]
+```
+
+* Deletes key–value pair
+* **Does not return anything**
+
+---
+
+### Difference: `pop()` vs `del`
+
+| Feature              | pop() | del |
+| -------------------- | ----- | --- |
+| Returns value        | ✅     | ❌   |
+| Deletes pair         | ✅     | ✅   |
+| Error if key missing | ✅     | ✅   |
+
+---
+
+## 11. `popitem()` Method
+
+```python
+d.popitem()
+```
+
+* Removes **last inserted** key–value pair
+* Returns a **tuple** `(key, value)`
+
+```python
+(108, "CDE")
+```
+
+⚠️ Order refers to **insertion order**, not sorting
+
+---
+
+## 12. Clearing Dictionary
+
+```python
+d.clear()
+```
+
+* Removes all items
+* Dictionary still exists
+
+---
+
+## 13. Deleting Dictionary Object
+
+```python
+del d
+```
+
+* Deletes dictionary completely
+* Any further access causes **NameError**
+
+---
+
+## 14. Real-World Use Cases
+
+* 📖 Word dictionary → word : meaning
+* 🎓 Student records → roll_no : student_data
+* 🧑‍💼 Employee database → emp_id : emp_details
+* 🗳 Voting system → candidate : votes
+* 📊 Frequency counting → item : count
+
+---
+
+## 15. Key Takeaways (Exam Gold)
+
+* Dictionary = **hash map**
+* Keys → unique & immutable
+* Fast lookup using keys
+* `get()` is safer than `[]`
+* `popitem()` removes last inserted item
+* Unordered, but insertion order preserved (Python 3.7+)
+
+---

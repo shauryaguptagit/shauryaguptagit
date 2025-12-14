@@ -1,0 +1,227 @@
+# 🐍 `type()` Function & Data Types in Python — Short Notes
+
+## 1️⃣ What is the `type()` Function?
+
+* `type()` is a **built-in Python function**
+* It returns the **data type of an object**
+* Works on:
+
+  * Variables
+  * Values (literals)
+
+📌
+
+> `type()` tells the type of the **object**, not the variable.
+
+---
+
+## 2️⃣ Data Types in Python (Key Idea)
+
+* Python is **dynamically typed**
+* Data types are:
+
+  * **Associated with objects**
+  * **Not declared explicitly**
+
+📌
+
+> Variables are just references; objects carry type information.
+
+---
+
+## 3️⃣ Numeric Data Types
+
+### 🔹 Integer (`int`)
+
+* Whole numbers
+
+📌
+
+> Python automatically assigns `int` type to integer values.
+
+---
+
+### 🔹 Float (`float`)
+
+* Decimal numbers
+
+📌
+
+> Any number with decimal becomes `float`.
+
+---
+
+### 🔹 Complex (`complex`)
+
+* Written as `a + bj`
+* `a` → real part
+* `b` → imaginary part
+
+📌
+
+> Python has built-in support for complex numbers.
+
+---
+
+## 4️⃣ Boolean Type (`bool`)
+
+* Represents logical values:
+
+  * `True`
+  * `False`
+* Must start with **capital letters**
+
+📌
+
+> Boolean type is used for conditions and status flags.
+
+---
+
+## 5️⃣ `None` Type (`NoneType`)
+
+### What is `None`?
+
+* A **special value** in Python
+* Represents:
+
+  * No value
+  * Unknown value
+  * Uninitialized state
+
+📌
+
+> `None` ≠ `0`, `False`, or empty string
+
+---
+
+### Why `None` is Useful?
+
+* Acts like `null` in Java / C++
+* Used in:
+
+  * Data structures
+  * Placeholders
+  * Resetting variables
+
+📌
+
+> `type(None)` → `NoneType`
+
+---
+
+## 6️⃣ Sequence Data Types
+
+### 🔹 String (`str`)
+
+* Sequence of characters
+* Created using:
+
+  * Single quotes `' '`
+  * Double quotes `" "`
+
+📌 Important:
+
+* Python has **no separate character type**
+* Single character = string of length 1
+
+---
+
+### 🔹 List (`list`)
+
+* Ordered collection of items
+* Dynamic size
+* Items can be modified (mutable)
+* Created using **square brackets** `[]`
+
+📌
+
+> List is similar to ArrayList (Java) / vector (C++).
+
+---
+
+### 🔹 Tuple (`tuple`)
+
+* Ordered collection of items
+* **Immutable** (cannot be changed)
+* Created using **round brackets** `()`
+
+📌
+
+> Tuple is used when data should not change.
+
+---
+
+## 7️⃣ Set Type (`set`)
+
+* Collection of **distinct items**
+* **Unordered**
+* Created using **curly brackets** `{}`
+
+### Key Properties
+
+* No duplicates
+* Fast operations:
+
+  * Membership check
+  * Union
+  * Intersection
+
+📌
+
+> Set internally uses hashing.
+
+---
+
+## 8️⃣ Dictionary (`dict`)
+
+* Collection of **key–value pairs**
+* Keys → unique
+* Values → any type
+* Created using **curly brackets** `{}`
+
+📌
+
+> Dictionary is used for mappings (like real-world data).
+
+---
+
+### Common Use Cases
+
+* Roll number → student data
+* Item → price
+* Word → frequency
+
+---
+
+## 9️⃣ Bracket → Type Mapping (Very Important)
+
+| Bracket Used       | Type       |
+| ------------------ | ---------- |
+| `" "` / `' '`      | String     |
+| `[]`               | List       |
+| `()`               | Tuple      |
+| `{}` (values only) | Set        |
+| `{key: value}`     | Dictionary |
+
+📌
+
+> Python identifies types using syntax.
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* `type()` returns object’s data type
+* Python is dynamically typed
+* `None` has its own type (`NoneType`)
+* Lists are mutable, tuples are immutable
+* Sets store distinct elements
+* Dictionaries store key–value pairs
+
+---
+
+## 🎯 One-Line Summary
+
+> The `type()` function identifies the data type of an object, and Python automatically manages data types through dynamic typing.
+
+---

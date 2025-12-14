@@ -1,0 +1,257 @@
+# 🐍 Lists in Python — Short Notes
+
+## 1️⃣ Why Do We Need Lists?
+
+* Normal variables store **single values**
+* Real-world programs need **collections of items**
+
+  * Friends list (social media)
+  * Students list (college software)
+  * Courses per student
+
+📌
+
+> Lists store **multiple items together** in one container.
+
+---
+
+## 2️⃣ What is a List?
+
+* A **container (collection)** in Python
+* Stores multiple items
+* Items can be:
+
+  * Integers
+  * Floats
+  * Strings
+  * Mixed types
+
+📌
+
+> Lists are **ordered** and **mutable**.
+
+---
+
+## 3️⃣ Creating a List
+
+* Created using **square brackets `[]`**
+* Items are separated by commas
+
+📌
+
+> Python automatically detects it as a list due to `[]`.
+
+---
+
+## 4️⃣ Indexing in Lists
+
+### 🔹 Positive Indexing
+
+* Starts from `0`
+* First element → index `0`
+
+### 🔹 Negative Indexing
+
+* Starts from `-1`
+* Last element → index `-1`
+
+📌
+
+> Lists support both positive and negative indexing.
+
+---
+
+## 5️⃣ Printing a List
+
+* Printing a list shows **all items in order**
+* Order is same as insertion order
+
+---
+
+## 6️⃣ Adding Items to a List
+
+### 🔹 `append(item)`
+
+* Adds item at the **end of the list**
+
+📌
+
+> Increases list size by 1.
+
+---
+
+### 🔹 `insert(index, item)`
+
+* Inserts item at a specific index
+* Shifts remaining items to the right
+
+📌
+
+> Index is **position-based**, not value-based.
+
+---
+
+## 7️⃣ Checking Presence of an Item
+
+### 🔹 `in` Operator
+
+* Checks whether an item exists in list
+* Returns `True` or `False`
+
+📌
+
+> Works with other collections too.
+
+---
+
+## 8️⃣ Counting Items
+
+### 🔹 `count(item)`
+
+* Returns number of occurrences of an item
+
+📌
+
+> Useful when duplicates exist.
+
+---
+
+## 9️⃣ Finding Index of an Item
+
+### 🔹 `index(item)`
+
+* Returns index of **first occurrence**
+* Raises **error** if item not found
+
+📌
+
+> Always check with `in` before using `index`.
+
+---
+
+### 🔹 `index(item, start, end)`
+
+* Searches within a range
+* `start` → inclusive
+* `end` → exclusive
+
+---
+
+## 🔟 Removing Items from a List
+
+### 🔹 `remove(value)`
+
+* Removes **first occurrence** of given value
+* Raises error if value not present
+
+📌
+
+> Use only after checking item exists.
+
+---
+
+### 🔹 `pop()`
+
+* Removes **last item**
+* Returns the removed item
+
+---
+
+### 🔹 `pop(index)`
+
+* Removes item at given index
+* Returns the removed item
+
+---
+
+### 🔹 `del`
+
+* Removes item using index
+* Can remove:
+
+  * Single item
+  * Range of items
+
+📌
+
+> `del` is a general-purpose keyword.
+
+---
+
+## 1️⃣1️⃣ General-Purpose Functions on Lists
+
+### 🔹 `max(list)`
+
+* Returns maximum element
+
+### 🔹 `min(list)`
+
+* Returns minimum element
+
+### 🔹 `sum(list)`
+
+* Returns sum of elements
+* Works only for numeric lists
+
+---
+
+### 🔹 `reverse()`
+
+* Reverses list **in-place**
+* Works for all data types
+
+---
+
+### 🔹 `sort()`
+
+* Sorts list in **ascending order**
+* Works when elements are comparable
+
+📌
+
+> Sorting mixed types (int + str) ❌ causes error.
+
+---
+
+## 1️⃣2️⃣ Lists with Strings
+
+* If list contains only strings:
+
+  * `max()` → lexicographically largest string
+  * `min()` → lexicographically smallest string
+  * `sort()` → dictionary (lexicographic) order
+  * `sum()` ❌ not supported
+
+---
+
+## 🔥 Key Properties Summary
+
+| Property          | List |
+| ----------------- | ---- |
+| Ordered           | ✅    |
+| Mutable           | ✅    |
+| Allows duplicates | ✅    |
+| Mixed data types  | ✅    |
+| Dynamic size      | ✅    |
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* Lists store multiple items
+* Created using square brackets `[]`
+* Lists are mutable and ordered
+* Support positive & negative indexing
+* `append()` adds at end
+* `insert()` adds at index
+* `remove()` removes by value
+* `pop()` removes by index
+* `del` removes by index/range
+
+---
+
+## 🎯 One-Line Summary
+
+> A list in Python is a dynamic, ordered, mutable collection used to store multiple items together.
+
+---

@@ -1,0 +1,205 @@
+# 🐍 Tuples in Python — Short Notes
+
+## 1️⃣ What is a Tuple?
+
+* A **tuple** is a collection in Python
+* Very similar to a list in:
+
+  * Ordering
+  * Indexing
+  * Slicing
+* Key difference: **tuples are immutable**
+
+📌
+
+> Once created, a tuple **cannot be changed**.
+
+---
+
+## 2️⃣ Key Properties of Tuples
+
+| Property          | Tuple |
+| ----------------- | ----- |
+| Ordered           | ✅     |
+| Indexed           | ✅     |
+| Mutable           | ❌     |
+| Allows duplicates | ✅     |
+| Mixed data types  | ✅     |
+| Faster than list  | ✅     |
+| Less memory       | ✅     |
+
+---
+
+## 3️⃣ Creating a Tuple
+
+### 🔹 Using parentheses
+
+```python
+t = (10, 20, "geek")
+```
+
+### 🔹 Parentheses are optional
+
+```python
+t = 10, 20, 30
+```
+
+📌
+
+> Python recognizes a tuple by **comma**, not brackets.
+
+---
+
+## 4️⃣ Empty Tuple
+
+```python
+t = ()
+```
+
+* Creates an empty tuple
+* `type(t)` → tuple
+
+---
+
+## 5️⃣ Single-Element Tuple (IMPORTANT)
+
+❌ This is NOT a tuple:
+
+```python
+t = (10)
+```
+
+✔️ Correct way:
+
+```python
+t = (10,)
+# or
+t = 10,
+```
+
+📌
+
+> **Comma is mandatory** for single-element tuples.
+
+---
+
+## 6️⃣ Indexing in Tuples
+
+* Same as list
+* Starts from `0`
+* Supports **negative indexing**
+
+Example concept:
+
+* `t[0]` → first element
+* `t[-1]` → last element
+
+---
+
+## 7️⃣ Slicing Tuples
+
+* Works exactly like lists
+* Format:
+
+```python
+t[start:end]
+```
+
+📌
+
+* `start` → inclusive
+* `end` → exclusive
+
+---
+
+## 8️⃣ Tuple Immutability (Most Important Difference)
+
+Not allowed in tuples:
+
+* Adding items
+* Removing items
+* Changing items
+
+❌ Example:
+
+```python
+t[0] = 30   # Error
+```
+
+📌
+
+> Tuples cannot be modified after creation.
+
+---
+
+## 9️⃣ Why Use Tuples If Lists Are More Powerful?
+
+### Reasons:
+
+* Tuples are **faster**
+* Tuples use **less memory**
+* Best for **fixed collections**
+
+### Real-World Examples:
+
+* Days of the week
+* Gender list
+* User access levels
+* Constant configuration values
+
+📌
+
+> Use tuples when data should **never change**.
+
+---
+
+## 🔟 Tuple Functions (Allowed)
+
+Works like list:
+
+* `len()`
+* `count()`
+* `index()`
+* `max()`
+* `min()`
+
+📌
+
+> Only **non-modifying** operations are allowed.
+
+---
+
+## ❌ Functions NOT Available for Tuples
+
+Not supported:
+
+* `append()`
+* `insert()`
+* `remove()`
+* `pop()`
+* `sort()`
+* `reverse()`
+* `clear()`
+
+📌
+
+> Anything that modifies data ❌
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* Tuples are immutable
+* Created using commas
+* Parentheses are optional
+* Faster and memory-efficient than lists
+* Suitable for fixed data
+* Support indexing and slicing
+
+---
+
+## 🎯 One-Line Summary
+
+> A tuple is an ordered, immutable collection in Python used for fixed data that should not change.
+
+---

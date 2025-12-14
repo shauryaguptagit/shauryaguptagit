@@ -1,0 +1,228 @@
+# 🐍 Variables in Python — Short Notes
+
+## 1️⃣ What is a Variable?
+
+* A variable is a **name (label)** that refers to a **memory location**
+* Used to **store data** temporarily
+* Data can be accessed and modified using the variable name
+
+📌
+
+> Variables allow us to store, access, and manipulate data in memory.
+
+---
+
+## 2️⃣ Basic Example (Conceptual)
+
+* `age = 38` → stores number
+* `name = "Ankit"` → stores string
+* `weight = 58.5` → stores decimal value
+
+When printed:
+
+* Output is the **value assigned to the variable**
+
+📌
+
+> Printing a variable prints its stored value.
+
+---
+
+## 3️⃣ Why Variables Are Needed
+
+Variables help to:
+
+* Store data
+* Reuse data
+* Perform computations
+* Build logic
+
+📌 Real-world example:
+
+* Price + Tax → Total Price
+* Variables make such calculations possible.
+
+---
+
+## 4️⃣ How Variables Work Internally (Very Important)
+
+### Memory Reference Concept
+
+```text
+x = 10
+```
+
+* Memory location is created with value `10`
+* `x` becomes a **reference** to that location
+
+```text
+y = "geek"
+```
+
+* New memory location is created
+* `y` points to it
+
+📌
+
+> Variables do NOT store values directly; they reference memory locations.
+
+---
+
+### Multiple References to Same Object
+
+```text
+z = 20
+w = z
+```
+
+* `w` and `z` point to the **same memory location**
+
+If later:
+
+```text
+w = 30
+```
+
+* New memory location created
+* `w` now points to `30`
+* `z` still points to `20`
+
+📌
+
+> Assignment changes references, not original objects.
+
+---
+
+## 5️⃣ Printing Multiple Variables
+
+* Python allows printing multiple variables using commas
+* Output is space-separated
+
+📌
+
+> Multiple variables can be printed in a single statement.
+
+---
+
+## 6️⃣ Dynamic Typing in Python (Very Important)
+
+### What is Dynamic Typing?
+
+* Variables **do not have fixed types**
+* Type is associated with the **value**, not the variable
+
+```text
+x = 10
+x = "geek"
+```
+
+✔ Valid in Python
+❌ Invalid in C++ / Java
+
+📌
+
+> Python is a dynamically typed language.
+
+---
+
+## 7️⃣ Comparison with C++ / Java
+
+| Feature       | Python    | C++ / Java |
+| ------------- | --------- | ---------- |
+| Typing        | Dynamic   | Static     |
+| Variable type | Not fixed | Fixed      |
+| Reassignment  | Allowed   | Restricted |
+
+---
+
+## 8️⃣ Common Variable Types (Conceptual)
+
+### Boolean Variables
+
+* Used for status / conditions
+* Values:
+
+  * `True`
+  * `False`
+    (Both start with capital letters)
+
+📌 Example use cases:
+
+* `is_valid`
+* `is_published`
+
+---
+
+### Numeric Variables
+
+* **Integer** → whole numbers (e.g. marks)
+* **Float** → decimal values (e.g. 3.14)
+
+---
+
+### String Variables
+
+* Store text
+* Internally represented by `str` class
+
+📌
+
+> Strings are sequences of characters.
+
+---
+
+## 9️⃣ Undefined Variables (Error Case)
+
+* Accessing a variable **before assignment** causes an error
+
+📌 Error:
+
+* `NameError: name 'x' is not defined`
+
+📌
+
+> Variables must be assigned before use.
+
+---
+
+## 🔟 The `None` Value (Very Important)
+
+### What is `None`?
+
+* A **special value** in Python
+* Represents **no value / absence of value**
+
+### Use cases:
+
+* Placeholder
+* Resetting variables
+* Unknown or missing value
+
+📌 Important:
+
+* `None` ≠ `0`
+* `None` ≠ `False`
+* `None` ≠ empty string
+
+📌
+
+> `None` is a distinct value in Python.
+
+---
+
+## 🔥 Exam / Viva One-Liners
+
+* Variables are references to memory locations
+* Python is dynamically typed
+* Variables can change type at runtime
+* `True` and `False` are capitalized
+* `None` is a special value
+* Undefined variables cause `NameError`
+
+---
+
+## 🎯 One-Line Summary
+
+> Variables in Python are dynamically typed references to memory locations used to store and manipulate data.
+
+---

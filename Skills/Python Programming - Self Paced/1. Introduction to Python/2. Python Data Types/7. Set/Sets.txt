@@ -1,0 +1,324 @@
+# 📘 Python Sets — Complete Notes
+
+---
+
+## 1️⃣ What is a Set in Python?
+
+A **set** is a collection of **distinct (unique)** elements.
+
+```python
+s = {10, 20, 30}
+```
+
+### Key Points
+
+* Stores **multiple items**
+* Items can be of **same type** or **mixed type**
+* **Duplicates are NOT allowed**
+
+---
+
+## 2️⃣ Difference Between List and Set
+
+| Feature                | List   | Set      |
+| ---------------------- | ------ | -------- |
+| Ordered                | ✅ Yes  | ❌ No     |
+| Indexed                | ✅ Yes  | ❌ No     |
+| Allows duplicates      | ✅ Yes  | ❌ No     |
+| Mutable                | ✅ Yes  | ✅ Yes    |
+| Membership test (`in`) | Slower | ⚡ Faster |
+
+---
+
+## 3️⃣ Distinct Elements Property
+
+```python
+s = {10, 20, 20, 30}
+print(s)     # {10, 20, 30}
+```
+
+* Duplicate values are **automatically removed**
+* Only **unique elements** are stored
+
+---
+
+## 4️⃣ Unordered Nature of Sets
+
+* Sets **do not maintain order**
+* Output order is **not predictable**
+
+```python
+s = {10, 20, 30}
+print(s)
+```
+
+Possible outputs:
+
+```
+{10, 20, 30}
+{20, 10, 30}
+{30, 20, 10}
+```
+
+⚠️ **Never rely on order in sets**
+
+---
+
+## 5️⃣ No Indexing in Sets
+
+```python
+s = {10, 20, 30}
+# s[0] ❌ Error
+```
+
+### Reason
+
+* Sets are **unordered**
+* Indexing requires order
+* Therefore, **indexing is not allowed**
+
+---
+
+## 6️⃣ Why Use Sets When Lists Exist?
+
+Sets are used because they provide **very fast operations**:
+
+* Fast **search**
+* Fast **insert**
+* Fast **delete**
+* Fast **set operations**:
+
+  * Union
+  * Intersection
+  * Difference
+  * Symmetric Difference
+
+### Reason
+
+👉 Sets use **hashing internally**
+
+---
+
+## 7️⃣ Creating Sets
+
+### Using Curly Braces
+
+```python
+s1 = {10, 20, 30}
+```
+
+### Using `set()` Constructor
+
+```python
+s2 = set([10, 20, 30, 40])
+```
+
+* You can pass:
+
+  * List
+  * Tuple
+  * Another set
+
+---
+
+## 8️⃣ Empty Set (Very Important)
+
+```python
+s = {}        # ❌ Creates dictionary
+s = set()     # ✅ Creates empty set
+```
+
+```python
+print(type(s))   # <class 'set'>
+```
+
+---
+
+## 9️⃣ Adding Elements
+
+### Add Single Element
+
+```python
+s.add(30)
+```
+
+* Adding duplicate does nothing
+
+---
+
+## 🔟 Adding Multiple Elements — `update()`
+
+```python
+s.update([40, 50])
+s.update({60, 70})
+s.update([80], {90})
+```
+
+* Accepts **any iterable**
+* Adds only **new elements**
+
+---
+
+## 1️⃣1️⃣ Removing Elements
+
+### `discard()` — Safe
+
+```python
+s.discard(30)
+s.discard(100)   # No error
+```
+
+### `remove()` — Unsafe
+
+```python
+s.remove(20)
+s.remove(100)    # ❌ KeyError
+```
+
+### Best Practice
+
+```python
+if 20 in s:
+    s.remove(20)
+```
+
+---
+
+## 1️⃣2️⃣ Clearing vs Deleting a Set
+
+### `clear()` — Empties the set
+
+```python
+s.clear()
+```
+
+* Set still exists
+* Becomes empty
+
+### `del` — Deletes the set object
+
+```python
+del s
+```
+
+* Set is removed from memory
+
+---
+
+## 1️⃣3️⃣ Basic Set Operations
+
+```python
+len(s)        # Number of elements
+10 in s       # Membership test (fast)
+```
+
+---
+
+## 1️⃣4️⃣ Set Operations (Most Important)
+
+Assume:
+
+```python
+s1 = {2, 4, 6, 8}
+s2 = {3, 6, 9}
+```
+
+### Union
+
+```python
+s1 | s2
+s1.union(s2)
+```
+
+➡️ `{2, 3, 4, 6, 8, 9}`
+
+---
+
+### Intersection
+
+```python
+s1 & s2
+s1.intersection(s2)
+```
+
+➡️ `{6}`
+
+---
+
+### Difference
+
+```python
+s1 - s2
+s1.difference(s2)
+```
+
+➡️ `{2, 4, 8}`
+
+---
+
+### Symmetric Difference
+
+```python
+s1 ^ s2
+s1.symmetric_difference(s2)
+```
+
+➡️ `{2, 3, 4, 8, 9}`
+
+---
+
+## 1️⃣5️⃣ Set Relationship Operations
+
+Assume:
+
+```python
+a = {2, 4, 6, 8}
+b = {4, 8}
+```
+
+### Disjoint
+
+```python
+a.isdisjoint(b)
+```
+
+* `True` → no common elements
+* `False` → common elements exist
+
+---
+
+### Subset
+
+```python
+b <= a
+b.issubset(a)
+```
+
+### Proper Subset
+
+```python
+b < a
+```
+
+---
+
+### Superset
+
+```python
+a >= b
+a.issuperset(b)
+```
+
+### Proper Superset
+
+```python
+a > b
+```
+
+---
+
+## 🔑 One-Line Summary (Exam Gold)
+
+> **Set is an unordered collection of distinct elements that uses hashing internally, making membership tests and set operations extremely fast.**
+
+---
