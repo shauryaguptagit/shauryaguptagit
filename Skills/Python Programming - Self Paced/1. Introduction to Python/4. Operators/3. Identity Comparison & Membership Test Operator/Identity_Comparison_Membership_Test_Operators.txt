@@ -1,0 +1,138 @@
+## 📘 Python Membership & Identity Operators — **Compact Exam-Ready Notes**
+
+---
+
+## 🔹 What are Membership & Identity Operators?
+
+* **Membership Operators** → check whether a value exists **inside a sequence**
+* **Identity Operators** → check whether **two variables refer to the same object in memory**
+
+---
+
+# 🔑 1. Membership Operators
+
+Used with **strings, lists, tuples, sets, dictionaries**
+
+---
+
+## ✅ `in` Operator
+
+Returns `True` if the element exists in the sequence, else `False`.
+
+```python
+list1 = [1, 2, 3, 4, 5]
+str1 = "Hello World"
+dict1 = {1: "Geeks", 2: "for", 3: "geeks"}
+
+print(2 in list1)     # True
+print('O' in str1)    # False (case-sensitive)
+print(3 in dict1)     # True (checks KEYS)
+```
+
+📌 **Important**
+
+* For **dictionary**, `in` checks **keys**, not values
+
+---
+
+## ❌ `not in` Operator
+
+Returns `True` if the element is **not present**.
+
+```python
+print(2 not in list1)    # False
+print('O' not in str1)   # True
+print(3 not in dict1)    # False
+```
+
+---
+
+## ⚙️ `operator.contains()` (Function Form of `in`)
+
+Works exactly like `in`, useful in functional programming.
+
+```python
+import operator
+
+print(operator.contains([1, 2, 3], 2))       # True
+print(operator.contains("Hello", 'O'))       # False
+print(operator.contains({1, 2, 3}, 6))        # False
+print(operator.contains({1: "A"}, 1))         # True (key)
+print(operator.contains((1, 2, 3), 9))        # False
+```
+
+---
+
+# 🔑 2. Identity Operators
+
+Used to check **memory location**, not values.
+
+---
+
+## 🧠 `is` Operator
+
+Returns `True` if both variables point to **same object in memory**.
+
+```python
+num1 = 5
+num2 = 5
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+c = a
+
+print(num1 is num2)   # True (integer caching)
+print(a is b)         # False (different objects)
+print(a is c)         # True (same reference)
+```
+
+📌 Python **caches small integers and strings**, so `is` may return `True`
+
+---
+
+## ❌ `is not` Operator
+
+Returns `True` if objects are **different in memory**.
+
+```python
+print(a is not b)   # True
+print(a is not c)   # False
+```
+
+---
+
+# ⚠️ `==` vs `is` (VERY IMPORTANT)
+
+| Operator | Checks              |
+| -------- | ------------------- |
+| `==`     | **Value equality**  |
+| `is`     | **Memory identity** |
+
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a == b)   # True (same values)
+print(a is b)   # False (different objects)
+```
+
+📌 **Golden Rule**
+
+* Use `==` → compare values
+* Use `is` → compare memory (mostly with `None`)
+
+```python
+if x is None:   # correct
+```
+
+---
+
+# 🧠 Quick Summary (Exam Gold)
+
+* `in` / `not in` → membership check
+* `is` / `is not` → memory check
+* Dictionary membership → **keys only**
+* `==` ≠ `is`
+
+---
+

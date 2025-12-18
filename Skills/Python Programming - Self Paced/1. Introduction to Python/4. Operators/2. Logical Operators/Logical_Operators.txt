@@ -1,0 +1,184 @@
+## 📘 **Python Logical Operators — Short Notes (Concise & Practical)**
+
+---
+
+## 🔹 What are Logical Operators?
+
+Logical operators are used to **combine or modify conditions** that evaluate to `True` or `False`.
+They are mostly used in **if conditions, loops, and decision-making logic**.
+
+Python has **three logical operators**:
+
+* `and`
+* `or`
+* `not`
+
+---
+
+## 🔢 **Logical Operators Overview**
+
+| Operator | Meaning     | Returns True when…                 | Example            |
+| -------- | ----------- | ---------------------------------- | ------------------ |
+| `and`    | Logical AND | **All conditions are True**        | `x > 5 and x < 10` |
+| `or`     | Logical OR  | **At least one condition is True** | `x < 5 or x > 10`  |
+| `not`    | Logical NOT | **Condition is False**             | `not(x > 5)`       |
+
+---
+
+## ✅ Logical AND (`and`)
+
+* Returns `True` **only if all operands are True**
+* Stops checking as soon as it finds `False` (**short-circuiting**)
+
+```python
+a = 10
+b = 10
+c = -10
+
+if a > 0 and b > 0:
+    print("Both are positive")
+
+if a > 0 and b > 0 and c > 0:
+    print("All are positive")
+else:
+    print("At least one is not positive")
+```
+
+📌 Output:
+
+```
+Both are positive
+At least one is not positive
+```
+
+---
+
+### 🔎 Truthiness with AND
+
+```python
+a = 10
+b = 12
+c = 0
+
+if a and b and c:
+    print("All True")
+else:
+    print("At least one False")
+```
+
+📌 `0` is treated as `False` → condition fails
+
+---
+
+## 🔁 Logical OR (`or`)
+
+* Returns `True` if **any one operand is True**
+* Stops checking as soon as it finds `True`
+
+```python
+a = 10
+b = -10
+c = 0
+
+if a > 0 or b > 0:
+    print("At least one is positive")
+else:
+    print("None are positive")
+```
+
+📌 Output:
+
+```
+At least one is positive
+```
+
+---
+
+### 🔎 Truthiness with OR
+
+```python
+a = 10
+b = 12
+c = 0
+
+if a or b or c:
+    print("At least one True")
+else:
+    print("All False")
+```
+
+---
+
+## 🔄 Logical NOT (`not`)
+
+* Reverses the boolean value
+* Works on **one condition only**
+
+```python
+a = 10
+
+if not a:
+    print("a is False")
+else:
+    print("a is True")
+```
+
+📌 Since `a = 10` → True → `not a` becomes False
+
+---
+
+### 📌 NOT with conditions
+
+```python
+if not (a % 3 == 0 or a % 5 == 0):
+    print("Not divisible by 3 or 5")
+else:
+    print("Divisible by 3 or 5")
+```
+
+---
+
+## ⚡ Short-Circuit Behavior (Very Important)
+
+* `and` → stops at first `False`
+* `or` → stops at first `True`
+
+```python
+def check(x):
+    print("Checking:", x)
+    return x > 0
+
+if check(-1) or check(5) or check(10):
+    print("At least one positive")
+```
+
+📌 Output:
+
+```
+Checking: -1
+Checking: 5
+At least one positive
+```
+
+👉 `check(10)` never runs because `check(5)` returned True
+
+---
+
+## 🧠 **Order of Precedence (Logical Operators)**
+
+| Priority | Operator |
+| -------- | -------- |
+| 1️⃣      | `not`    |
+| 2️⃣      | `and`    |
+| 3️⃣      | `or`     |
+
+📌 Example:
+
+```python
+True or False and False
+# Interpreted as:
+True or (False and False)
+# Result → True
+```
+
+---

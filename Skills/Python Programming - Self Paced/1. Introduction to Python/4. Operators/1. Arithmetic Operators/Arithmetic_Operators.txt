@@ -1,0 +1,116 @@
+## 📘 **Python Arithmetic Operators — Short Notes (Concise & Practical)**
+
+### 🔹 What are Arithmetic Operators?
+
+Arithmetic operators are used to perform **mathematical calculations** on numbers in Python.
+
+---
+
+## 🔢 **List of Arithmetic Operators**
+
+| Operator | Name           | What it does                | Example  |
+| -------- | -------------- | --------------------------- | -------- |
+| `+`      | Addition       | Adds two values             | `x + y`  |
+| `-`      | Subtraction    | Subtracts second from first | `x - y`  |
+| `*`      | Multiplication | Multiplies values           | `x * y`  |
+| `/`      | Float Division | Returns quotient as float   | `x / y`  |
+| `//`     | Floor Division | Returns floor of quotient   | `x // y` |
+| `%`      | Modulus        | Returns remainder           | `x % y`  |
+| `**`     | Exponentiation | Power operation             | `x ** y` |
+
+---
+
+## ➕ Addition (`+`)
+
+```python
+2 + 3   # 5
+```
+
+Adds two numbers.
+
+---
+
+## ➖ Subtraction (`-`)
+
+```python
+2 - 3   # -1
+```
+
+Subtracts second value from the first.
+
+---
+
+## ✖ Multiplication (`*`)
+
+```python
+2 * 3   # 6
+```
+
+Returns product of two numbers.
+
+---
+
+## ➗ Division (`/`) — *Float Division*
+
+* **Always returns a float**
+
+```python
+10 / 2   # 5.0
+5 / 5    # 1.0
+-10 / 2  # -5.0
+```
+
+---
+
+## ⬇ Floor Division (`//`)
+
+* Returns **quotient rounded down**
+* If any operand is float → result is float
+* Negative results are **floored**, not truncated
+
+```python
+10 // 3     # 3
+-5 // 2     # -3
+5.0 // 2    # 2.0
+-5.0 // 2   # -3.0
+```
+
+---
+
+## 🔁 Modulus (`%`)
+
+Returns **remainder** after division.
+
+```python
+3 % 2   # 1
+```
+
+---
+
+## 🔼 Exponentiation (`**`)
+
+Raises first number to the power of the second.
+
+```python
+2 ** 3   # 8
+```
+
+---
+
+## ⚖️ **Operator Precedence (Very Important)**
+
+| Priority | Operators           | Associativity |
+| -------- | ------------------- | ------------- |
+| 1️⃣      | `**`                | Right to Left |
+| 2️⃣      | `*`, `/`, `//`, `%` | Left to Right |
+| 3️⃣      | `+`, `-`            | Left to Right |
+
+📌 Example:
+
+```python
+2 + 3 * 4      # 14
+(2 + 3) * 4    # 20
+2 ** 3 ** 2    # 512 (because right-to-left)
+```
+
+---
