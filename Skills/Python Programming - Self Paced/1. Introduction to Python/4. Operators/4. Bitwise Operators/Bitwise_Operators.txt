@@ -1,0 +1,195 @@
+## 📘 Python Bitwise Operators — **Concise, Practical Notes**
+
+---
+
+## 🔹 What are Bitwise Operators?
+
+* Bitwise operators work on **integers only**
+* Numbers are first converted to **binary**
+* Operations are performed **bit by bit**
+* Final result is converted back to **decimal**
+
+📌 Used in:
+
+* Low-level programming
+* Performance optimizations
+* Flags, masks, permissions
+* Competitive programming
+
+---
+
+## 🧮 Bitwise Operators Summary
+
+| Operator | Name        | Meaning                 |                            |
+| -------- | ----------- | ----------------------- | -------------------------- |
+| `&`      | Bitwise AND | 1 if both bits are 1    |                            |
+| `        | `           | Bitwise OR              | 1 if at least one bit is 1 |
+| `^`      | Bitwise XOR | 1 if bits are different |                            |
+| `~`      | Bitwise NOT | Flips all bits          |                            |
+| `<<`     | Left Shift  | Multiply by power of 2  |                            |
+| `>>`     | Right Shift | Divide by power of 2    |                            |
+
+---
+
+## 🔹 Bitwise AND (`&`)
+
+* Result bit = 1 **only if both bits are 1**
+
+```python
+a = 10   # 1010
+b = 4    # 0100
+print(a & b)
+```
+
+**Output**
+
+```
+0
+```
+
+📌 `1010 & 0100 = 0000`
+
+---
+
+## 🔹 Bitwise OR (`|`)
+
+* Result bit = 1 if **any bit is 1**
+
+```python
+print(a | b)
+```
+
+**Output**
+
+```
+14
+```
+
+📌 `1010 | 0100 = 1110`
+
+---
+
+## 🔹 Bitwise XOR (`^`)
+
+* Result bit = 1 if bits are **different**
+
+```python
+print(a ^ b)
+```
+
+**Output**
+
+```
+14
+```
+
+📌 `1010 ^ 0100 = 1110`
+
+---
+
+## 🔹 Bitwise NOT (`~`)
+
+* Flips all bits (1 → 0, 0 → 1)
+* Result = `-(n + 1)`
+
+```python
+print(~10)
+```
+
+**Output**
+
+```
+-11
+```
+
+📌 Formula:
+
+```
+~n = -(n + 1)
+```
+
+---
+
+## 🔹 Bitwise Right Shift (`>>`)
+
+* Shifts bits **right**
+* Equivalent to integer division by `2ⁿ`
+
+```python
+a = 10
+b = -10
+
+print(a >> 1)   # 10 // 2
+print(b >> 1)
+```
+
+**Output**
+
+```
+5
+-5
+```
+
+📌 Preserves sign (fills with 1 for negatives)
+
+---
+
+## 🔹 Bitwise Left Shift (`<<`)
+
+* Shifts bits **left**
+* Equivalent to multiplication by `2ⁿ`
+
+```python
+a = 5
+b = -10
+
+print(a << 1)   # 5 * 2
+print(b << 1)
+```
+
+**Output**
+
+```
+10
+-20
+```
+
+---
+
+## 🧠 Quick Shift Rules (Very Important)
+
+| Expression | Result      |
+| ---------- | ----------- |
+| `x << n`   | `x × (2ⁿ)`  |
+| `x >> n`   | `x // (2ⁿ)` |
+
+---
+
+## ⚙️ Bitwise Operator Overloading (Conceptual)
+
+* Python allows redefining operators for custom classes
+* Achieved using special methods:
+
+| Operator | Method         |            |
+| -------- | -------------- | ---------- |
+| `&`      | `__and__()`    |            |
+| `        | `              | `__or__()` |
+| `^`      | `__xor__()`    |            |
+| `~`      | `__invert__()` |            |
+| `<<`     | `__lshift__()` |            |
+| `>>`     | `__rshift__()` |            |
+
+📌 Mostly **advanced / OOP topic**, not required for beginners unless specified
+
+---
+
+## 🧠 One-Line Exam Reminders
+
+* Bitwise ops work **only on integers**
+* NOT (`~`) gives **negative result**
+* Shifts are faster than multiplication/division
+* XOR is used to **toggle bits**
+* AND is used for **masking**
+
+---
+
