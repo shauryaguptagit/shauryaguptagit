@@ -1,0 +1,182 @@
+Class Method vs Static Method in Python
+
+In Python, class methods and static methods are used to define behaviors that belong to a class rather than to individual objects. While both are bound to the class, they serve different purposes and have different access levels.
+
+What is a Class Method in Python?
+
+A class method is a method that is bound to the class, not the object.
+It receives the class itself as the first argument, conventionally named cls.
+
+Class methods are mainly used when we want to access or modify class-level data or create factory methods.
+
+Key Characteristics of Class Methods
+
+Defined using the @classmethod decorator
+
+First parameter is cls (reference to the class)
+
+Can access and modify class variables
+
+Affects all instances of the class
+
+Often used as alternative constructors (factory methods)
+
+Syntax of Class Method
+class C:
+    @classmethod
+    def fun(cls, arg1, arg2):
+        ...
+
+What is a Static Method in Python?
+
+A static method is also bound to the class, but it does not receive any implicit argument like self or cls.
+
+Static methods are used for utility or helper functions that logically belong to a class but do not depend on class or instance data.
+
+Key Characteristics of Static Methods
+
+Defined using the @staticmethod decorator
+
+No self or cls parameter
+
+Cannot access or modify class state
+
+Works like a normal function, but grouped inside a class
+
+Used for utility logic
+
+Syntax of Static Method
+class C:
+    @staticmethod
+    def fun(arg1, arg2):
+        ...
+
+Class Method vs Static Method (Comparison)
+Feature	Class Method	Static Method
+Decorator	@classmethod	@staticmethod
+First parameter	cls (class reference)	No implicit parameter
+Access class variables	✅ Yes	❌ No
+Modify class state	✅ Yes	❌ No
+Access instance variables	❌ No	❌ No
+Purpose	Factory methods, class-level logic	Utility/helper functions
+Knows about class	✅ Yes	❌ No
+When to Use Class Method?
+
+Use a class method when:
+
+You need to access or modify class variables
+
+You want to create factory methods
+
+You want behavior that applies to the class as a whole
+
+You need alternative constructors
+
+👉 Example use case: Creating objects using birth year instead of age
+
+When to Use Static Method?
+
+Use a static method when:
+
+The method does not depend on class or instance data
+
+It is a utility/helper function
+
+The function logically belongs to the class
+
+You want to group related functionality
+
+👉 Example use case: Checking if a person is an adult
+
+Simple Example: Class Method
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+    def get_value(self):
+        return self.value
+
+obj = MyClass(10)
+print(obj.get_value())
+
+Output
+10
+
+
+📌 This is a regular instance method, shown here to contrast with static methods.
+
+Simple Example: Static Method
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+    @staticmethod
+    def get_max_value(x, y):
+        return max(x, y)
+
+obj = MyClass(10)
+
+print(MyClass.get_max_value(20, 30))
+print(obj.get_max_value(20, 30))
+
+Output
+30
+30
+
+Explanation
+
+get_max_value() does not use self or cls
+
+Can be called using class name or object
+
+Works like a normal function
+
+Complete Example: Class Method vs Static Method
+from datetime import date
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Class method (Factory Method)
+    @classmethod
+    def fromBirthYear(cls, name, year):
+        return cls(name, date.today().year - year)
+
+    # Static method (Utility Method)
+    @staticmethod
+    def isAdult(age):
+        return age > 18
+
+person1 = Person('Mayank', 21)
+person2 = Person.fromBirthYear('Mayank', 1996)
+
+print(person1.age)
+print(person2.age)
+print(Person.isAdult(22))
+
+Output
+21
+25
+True
+
+Explanation
+
+fromBirthYear() uses cls to create a new object → class method
+
+isAdult() checks a condition → static method
+
+Class method modifies object creation logic
+
+Static method performs independent computation
+
+Time & Space Complexity
+
+Auxiliary Space: O(1)
+
+No additional memory structures used
+
+Exam-Friendly One-Line Difference ⭐
+
+Class methods work with class state (cls), while static methods are utility functions that do not depend on class or object state.
