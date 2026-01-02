@@ -1,0 +1,272 @@
+Inheritance in Python
+
+Inheritance is a core concept of Object-Oriented Programming (OOP) that allows a class (called a child / derived class) to acquire the properties and methods of another class (called a parent / base class).
+
+It helps in building relationships between classes and enables code reuse, extensibility, and maintainability.
+
+Basic Idea of Inheritance
+
+Parent Class → Provides common attributes and methods
+
+Child Class → Reuses parent functionality and can add or override behavior
+
+Simple Example of Inheritance
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def info(self):
+        print("Animal name:", self.name)
+
+class Dog(Animal):
+    def sound(self):
+        print(self.name, "barks")
+
+d = Dog("Buddy")
+d.info()      # Inherited method
+d.sound()     # Child method
+
+Output
+Animal name: Buddy
+Buddy barks
+
+Explanation
+
+Animal → Parent class
+
+Dog(Animal) → Dog inherits from Animal
+
+info() → Inherited from parent
+
+sound() → Defined in child class
+
+Why Do We Need Inheritance?
+
+Inheritance provides several advantages:
+
+✅ Code Reusability – Avoids duplication of common logic
+
+✅ Real-World Modeling – Represents relationships like Animal → Dog
+
+✅ Easy Maintenance – Changes in parent reflect in children
+
+✅ Method Overriding – Child classes can customize behavior
+
+✅ Scalability – Enables extensible and modular design
+
+The super() Function in Inheritance
+
+The super() function is used to call methods of the parent class, most commonly the constructor (__init__()).
+
+It ensures proper initialization of inherited attributes.
+
+Example Using super()
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def info(self):
+        print("Animal name:", self.name)
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)   # Call parent constructor
+        self.breed = breed
+
+    def details(self):
+        print(self.name, "is a", self.breed)
+
+d = Dog("Buddy", "Golden Retriever")
+d.info()
+d.details()
+
+Output
+Animal name: Buddy
+Buddy is a Golden Retriever
+
+Explanation
+
+super().__init__(name) initializes name from Animal
+
+Prevents rewriting parent logic
+
+Ensures cleaner and safer inheritance
+
+Types of Inheritance in Python
+
+Python supports five major types of inheritance.
+
+1. Single Inheritance
+
+A child class inherits from one parent class.
+
+Example
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Employee(Person):
+    def show_role(self):
+        print(self.name, "is an employee")
+
+emp = Employee("Sarah")
+print("Name:", emp.name)
+emp.show_role()
+
+Output
+Name: Sarah
+Sarah is an employee
+
+Explanation
+
+Employee inherits name from Person
+
+Simplest and most common form of inheritance
+
+2. Multiple Inheritance
+
+A child class inherits from more than one parent class.
+
+Example
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Job:
+    def __init__(self, salary):
+        self.salary = salary
+
+class Employee(Person, Job):
+    def __init__(self, name, salary):
+        Person.__init__(self, name)
+        Job.__init__(self, salary)
+
+    def details(self):
+        print(self.name, "earns", self.salary)
+
+emp = Employee("Jennifer", 50000)
+emp.details()
+
+Output
+Jennifer earns 50000
+
+Explanation
+
+Employee inherits from Person and Job
+
+Can access attributes from both parents
+
+Requires careful constructor handling
+
+3. Multilevel Inheritance
+
+A class is derived from another derived class (inheritance chain).
+
+Example
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Employee(Person):
+    def show_role(self):
+        print(self.name, "is an employee")
+
+class Manager(Employee):
+    def department(self, dept):
+        print(self.name, "manages", dept, "department")
+
+mgr = Manager("Joy")
+mgr.show_role()
+mgr.department("HR")
+
+Output
+Joy is an employee
+Joy manages HR department
+
+Explanation
+
+Manager → Employee → Person
+
+Child can access parent and grandparent methods
+
+4. Hierarchical Inheritance
+
+Multiple child classes inherit from the same parent class.
+
+Example
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Employee(Person):
+    def role(self):
+        print(self.name, "works as an employee")
+
+class Intern(Person):
+    def role(self):
+        print(self.name, "is an intern")
+
+emp = Employee("David")
+emp.role()
+
+intern = Intern("Eva")
+intern.role()
+
+Output
+David works as an employee
+Eva is an intern
+
+Explanation
+
+Employee and Intern share the same parent
+
+Both reuse parent attributes but define their own behavior
+
+5. Hybrid Inheritance
+
+Combination of two or more inheritance types.
+
+Example
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Employee(Person):
+    def role(self):
+        print(self.name, "is an employee")
+
+class Project:
+    def __init__(self, project_name):
+        self.project_name = project_name
+
+class TeamLead(Employee, Project):
+    def __init__(self, name, project_name):
+        Employee.__init__(self, name)
+        Project.__init__(self, project_name)
+
+    def details(self):
+        print(self.name, "leads project:", self.project_name)
+
+lead = TeamLead("Sophia", "AI Development")
+lead.role()
+lead.details()
+
+Output
+Sophia is an employee
+Sophia leads project: AI Development
+
+Explanation
+
+Combines multilevel + multiple inheritance
+
+Powerful but should be used carefully
+
+Exam-Friendly Summary ⭐
+
+Inheritance allows reuse of code using parent-child relationships
+
+super() is used to call parent class methods
+
+Python supports Single, Multiple, Multilevel, Hierarchical, Hybrid inheritance
+
+Promotes reusability, scalability, and polymorphism
