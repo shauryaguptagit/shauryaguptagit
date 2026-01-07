@@ -1,0 +1,140 @@
+<!-- HTML ADVANCED TASKS -->
+
+<!--
+PROJECT: HTML-Only Informational Website
+
+Requirements:
+- Semantic structure
+- Forms
+- Media / iframe
+- HTML5 elements
+- SVG or canvas
+
+RULES:
+- No CSS
+- Focus on structure and meaning
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Advanced Concepts Demonstration Project">
+    <meta name="author" content="Shaurya Gupta">
+    <title>HTML Advanced Project</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Advanced Demonstration</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#media">Media</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>
+                This project demonstrates advanced HTML concepts using
+                only pure HTML without CSS or JavaScript.
+            </p>
+
+            <details>
+                <summary>Why HTML matters?</summary>
+                <p>
+                    HTML provides the structural foundation of every website.
+                    Clean and semantic HTML improves accessibility and SEO.
+                </p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- FEATURES SECTION -->
+        <section id="features">
+            <h2>HTML5 Features Used</h2>
+
+            <article data-feature="semantic-html">
+                <h3>Semantic HTML</h3>
+                <p>
+                    Tags like section, article, header, and footer give
+                    meaning to the content.
+                </p>
+            </article>
+
+            <article data-feature="progress-meter">
+                <h3>Progress & Meter</h3>
+
+                <p>HTML Learning Progress:</p>
+                <progress value="80" max="100"></progress>
+
+                <p>Confidence Level:</p>
+                <meter value="0.7">70%</meter>
+            </article>
+
+            <article data-feature="svg">
+                <h3>SVG Graphic</h3>
+
+                <svg width="120" height="120">
+                    <circle cx="60" cy="60" r="50" fill="blue"></circle>
+                </svg>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- MEDIA SECTION -->
+        <section id="media">
+            <h2>Embedded Media</h2>
+
+            <article>
+                <h3>Video Embed</h3>
+                <iframe
+                    width="300"
+                    height="200"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    allowfullscreen>
+                </iframe>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Form</h2>
+
+            <form>
+                <label>Name:</label><br>
+                <input type="text" placeholder="Your name"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" placeholder="Your email"><br><br>
+
+                <label>Message:</label><br>
+                <textarea rows="4" cols="30"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Shaurya Gupta</p>
+        <p>Built using pure HTML</p>
+    </footer>
+
+</body>
+</html>

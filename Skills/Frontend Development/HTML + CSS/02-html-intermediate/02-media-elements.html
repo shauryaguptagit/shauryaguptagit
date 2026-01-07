@@ -1,0 +1,45 @@
+<!--
+TOPIC: Media Elements in HTML
+
+<audio> and <video> allow embedding media.
+'controls' attribute gives play/pause buttons.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Elements</title>
+</head>
+<body>
+
+    <h2>Audio Example</h2>
+
+    <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <hr>
+
+    <h2>Video Example</h2>
+
+    <video width="300" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <!-- TASK:
+    1. Try adding any sample audio/video file
+    2. Change width and test controls
+    -->
+    <audio controls>
+        <source src="../assets/audio.mp3" type="audio/mp3">
+        Your browser does not support audio.
+    </audio>
+
+    <video width="300" controls>
+        <source src="../assets/sample_video.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>
