@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:1c2333,100:0d1117&height=200&section=header&text=Shaurya%20Gupta&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Data%20Analyst%20%E2%86%92%20Data%20Engineer%20%7C%20SQL%20%C2%B7%20Python%20%C2%B7%20AWS%20Athena&descAlignY=58&descSize=17&descColor=8b949e" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Shaurya%20Gupta&fontSize=60&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Data%20Analyst%20%E2%86%92%20Data%20Engineer%20%7C%20SQL%20%C2%B7%20Python%20%C2%B7%20AWS%20Athena&descAlignY=58&descSize=17&descColor=cdd6f4" width="100%"/>
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&lines=19+stores.+4+channels.+180K+records.+99.6%25+match+accuracy.;Building+systems+that+make+data+trustworthy+%F0%9F%93%8A;SQL+%7C+Python+%7C+AWS+Athena+%7C+Presto;Navigating+toward+Data+Engineering+from+the+analyst+seat." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=CBA6F7&center=true&vCenter=true&width=750&lines=19+stores.+4+channels.+180K+records.+99.6%25+match+accuracy.;Building+systems+that+make+data+trustworthy+%F0%9F%93%8A;SQL+%7C+Python+%7C+AWS+Athena+%7C+Presto;Navigating+toward+Data+Engineering+from+the+analyst+seat." alt="Typing SVG"/>
 </div>
 
 <br/>
@@ -18,7 +18,7 @@
   <a href="https://shaurya-gupta-devportfolio.vercel.app">
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white"/>
   </a>&nbsp;
-  <img src="https://komarev.com/ghpvc/?username=shauryaguptagit&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS"/>
+  <img src="https://komarev.com/ghpvc/?username=shauryaguptagit&color=cba6f7&style=for-the-badge&label=PROFILE+VIEWS"/>
 </div>
 
 <br/>
@@ -59,19 +59,21 @@ highlight: >
 
 <div align="center">
   <a href="https://github.com/shauryaguptagit/carbon-tag-gemini">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=carbon-tag-gemini&theme=github_dark_dimmed&hide_border=true&border_radius=10" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=carbon-tag-gemini&theme=tokyonight&hide_border=true&border_radius=10" width="48%"/>
   </a>
   <a href="https://github.com/shauryaguptagit/ozone-guardian">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=ozone-guardian&theme=github_dark_dimmed&hide_border=true&border_radius=10" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=ozone-guardian&theme=tokyonight&hide_border=true&border_radius=10" width="48%"/>
   </a>
 </div>
 
+<br/>
+
 <div align="center">
   <a href="https://github.com/shauryaguptagit/pragyawan-tools">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=pragyawan-tools&theme=github_dark_dimmed&hide_border=true&border_radius=10" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=pragyawan-tools&theme=tokyonight&hide_border=true&border_radius=10" width="48%"/>
   </a>
   <a href="https://github.com/shauryaguptagit/ms-excel-to-dashboard">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=ms-excel-to-dashboard&theme=github_dark_dimmed&hide_border=true&border_radius=10" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=shauryaguptagit&repo=ms-excel-to-dashboard&theme=tokyonight&hide_border=true&border_radius=10" width="48%"/>
   </a>
 </div>
 
@@ -80,14 +82,14 @@ highlight: >
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shauryaguptagit&show_icons=true&theme=github_dark_dimmed&hide_border=true&count_private=true&rank_icon=github&border_radius=10&include_all_commits=true" width="49%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shauryaguptagit&layout=compact&theme=github_dark_dimmed&hide_border=true&border_radius=10&hide=java,javascript,css,html&langs_count=6" width="41%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=shauryaguptagit&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github&border_radius=10" height="195"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shauryaguptagit&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&hide=java,javascript,css,html&langs_count=6" height="195"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=shauryaguptagit&theme=github-dark-blue&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D" width="70%"/>
+  <img src="https://streak-stats.demolab.com?user=shauryaguptagit&theme=tokyonight&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D" width="70%"/>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
@@ -95,7 +97,7 @@ highlight: >
 ## 🌐 Contribution Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shauryaguptagit&theme=react-dark&hide_border=true&area=true&radius=10" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shauryaguptagit&theme=tokyo-night&hide_border=true&area=true&radius=10" width="100%"/>
 </div>
 
 <br/>
@@ -113,9 +115,9 @@ highlight: >
 ## 🏆 Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=shauryaguptagit&theme=nord&no-frame=true&no-bg=true&margin-w=8&row=1&column=-1"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=shauryaguptagit&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=-1"/>
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:1c2333,100:0d1117&height=120&section=footer" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
 </div>
