@@ -110,13 +110,17 @@ highlight: >
   </picture>
 </div>
 
+<br/>
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
 
-## 🏆 Trophies
-
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=shauryaguptagit&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=-1"/>
+  <img src="https://img.shields.io/badge/Open%20to%20Work-Data%20Analyst%20%7C%20Business%20Analyst-2ea44f?style=for-the-badge&logo=handshake&logoColor=white"/>
+  <br/><br/>
+  <i>Actively looking for full-time DA / PA roles in Bengaluru or remote &nbsp;•&nbsp; guptashaurya2004@gmail.com</i>
 </div>
+
+<br/>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
