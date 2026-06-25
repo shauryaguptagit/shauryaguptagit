@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Shaurya%20Gupta&fontSize=60&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Data%20Analyst%20%E2%86%92%20Data%20Engineer%20%7C%20SQL%20%C2%B7%20Python%20%C2%B7%20AWS%20Athena&descAlignY=58&descSize=17&descColor=cdd6f4" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Shaurya%20Gupta&fontSize=60&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Data%20Analyst%20%7C%20SQL%20%C2%B7%20Python%20%C2%B7%20AWS%20Athena%20%7C%20Turning%20data%20into%20decisions&descAlignY=58&descSize=17&descColor=cdd6f4" width="100%"/>
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=CBA6F7&center=true&vCenter=true&width=750&lines=Building+reconciliation+systems+for+restaurant+chains+%F0%9F%93%8A;Multi-store+%7C+Multi-channel+%7C+Production+SQL+pipelines;SQL+%7C+Python+%7C+AWS+Athena+%7C+Presto;Navigating+toward+Data+Engineering+from+the+analyst+seat." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=CBA6F7&center=true&vCenter=true&width=750&lines=Data+Analyst+%7C+SQL+%C2%B7+Python+%C2%B7+AWS+Athena;Transforming+raw+data+into+business+decisions+%F0%9F%93%8A;Dashboards+%7C+Pipelines+%7C+Reporting+%7C+Insights;Open+to+DA+and+PA+roles+%E2%80%94+let%27s+talk." alt="Typing SVG"/>
 </div>
 
 <br/>
@@ -29,15 +29,16 @@
 
 ```yaml
 name     : Shaurya Gupta
-role     : Data Analyst Intern @ Koraa.ai, Bengaluru
-target   : DA / PA roles  →  Data Engineer (12–18 months)
+role     : Data Analyst
+stack    : SQL · Python · AWS Athena · Pandas · Power BI · Excel
+strengths: Data wrangling, business reporting, pipeline building, dashboards
+approach : >
+  I work at the intersection of data and decisions — writing SQL that
+  answers business questions, building pipelines that clean and surface
+  insights, and delivering reports that non-technical stakeholders
+  can actually act on.
+open_to  : Data Analyst and Product Analyst roles
 location : Delhi / Bengaluru, India
-open_to  : Full-time Data Analyst and Business Analyst roles
-highlight: >
-  At Koraa.ai, I build production-grade order reconciliation systems
-  for restaurant chains — matching POS data against food aggregator
-  settlement files across multiple stores and channels, surfacing
-  discrepancies finance teams would otherwise miss entirely.
 ```
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
@@ -51,7 +52,7 @@ highlight: >
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
   <img src="https://img.shields.io/badge/AWS_Athena-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
   <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Presto-5890FF?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
@@ -116,9 +117,9 @@ highlight: >
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Open%20to%20Work-Data%20Analyst%20%7C%20Business%20Analyst-2ea44f?style=for-the-badge&logo=handshake&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Open%20to%20Work-Data%20Analyst%20%7C%20Product%20Analyst-2ea44f?style=for-the-badge&logo=handshake&logoColor=white"/>
   <br/><br/>
-  <i>Actively looking for full-time DA / PA roles in Bengaluru or remote &nbsp;•&nbsp; guptashaurya2004@gmail.com</i>
+  <i>Actively looking for DA / PA roles &nbsp;•&nbsp; guptashaurya2004@gmail.com</i>
 </div>
 
 <br/>
