@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=CBA6F7&center=true&vCenter=true&width=750&lines=19+stores.+4+channels.+180K+records.+99.6%25+match+accuracy.;Building+systems+that+make+data+trustworthy+%F0%9F%93%8A;SQL+%7C+Python+%7C+AWS+Athena+%7C+Presto;Navigating+toward+Data+Engineering+from+the+analyst+seat." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=CBA6F7&center=true&vCenter=true&width=750&lines=Building+reconciliation+systems+for+restaurant+chains+%F0%9F%93%8A;Multi-store+%7C+Multi-channel+%7C+Production+SQL+pipelines;SQL+%7C+Python+%7C+AWS+Athena+%7C+Presto;Navigating+toward+Data+Engineering+from+the+analyst+seat." alt="Typing SVG"/>
 </div>
 
 <br/>
@@ -34,9 +34,10 @@ target   : DA / PA roles  →  Data Engineer (12–18 months)
 location : Delhi / Bengaluru, India
 open_to  : Full-time Data Analyst and Business Analyst roles
 highlight: >
-  Built a 19-store, 4-channel reconciliation system across Zomato,
-  Swiggy, Magicpin + Retail POS — 180K records at 99.6% match accuracy,
-  surfacing discrepancies finance teams would otherwise miss entirely.
+  At Koraa.ai, I build production-grade order reconciliation systems
+  for restaurant chains — matching POS data against food aggregator
+  settlement files across multiple stores and channels, surfacing
+  discrepancies finance teams would otherwise miss entirely.
 ```
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
