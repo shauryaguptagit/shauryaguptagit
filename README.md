@@ -1,69 +1,85 @@
-# Hi there, I'm Shaurya Gupta 👋
+<div align="center">
 
-I'm a B.Tech Computer Science student at MSIT, Delhi, with a minor in Artificial Intelligence and Machine Learning.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Shaurya+Gupta+%F0%9F%91%8B;Data+Analyst+%7C+SQL+%7C+Python+%7C+AWS;Building+systems+that+make+data+trustworthy;Open+to+DA+%2F+PA+roles" alt="Typing SVG" />
 
-I am passionate about building scalable and intelligent full-stack applications. My primary interests lie in **Full Stack Development**, **Microservice Architecture**, **FinTech**, and applying **AI/ML** to create practical solutions. I have hands-on experience in architecting systems using Java/Spring Boot for robust back-end services and Python/Flask for lightweight, AI-driven microservices.
+<br/>
 
-* 📫 **How to reach me:** [guptashaurya2004@gmail.com](mailto:guptashaurya2004@gmail.com)
-* 🔗 **Connect with me on LinkedIn:** [linkedin.com/in/shauryaguptaa](https://linkedin.com/in/shauryaguptaa)
-* 📍 **Based in:** Ghaziabad
+<a href="https://linkedin.com/in/shauryaguptaa"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:guptashaurya2004@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
+<img src="https://komarev.com/ghpvc/?username=shauryaguptagit&color=58a6ff&style=flat-square&label=Profile+Views" />
 
----
-
-## 🔧 My Tech Stack
-
-| Category | Technologies |
-| :--- | :--- |
-| **Backend** | Java \| Spring Boot \| Spring Security \| Spring Data JPA \| Python \| Flask \| REST APIs \| SQL |
-| **Frontend** | HTML \| CSS \| JavaScript \| Chart.js |
-| **Data & AI/ML** | scikit-learn \| pandas \| NumPy \| Matplotlib \| Streamlit |
-| **Tools & Platforms**| Git \| GitHub \| VS Code |
-| **Design** | Figma \| Framer \| Adobe Photoshop \| Adobe After Effects \| Canva |
+</div>
 
 ---
 
-## 🚀 Featured Projects
+## About Me
 
-Here are a couple of projects I'm proud of. You can find more in my repositories.
+I'm a Data Analyst who spent the last 5 months at **Koraa.ai** building a 19-store, 4-channel order reconciliation system — matching POS data against Zomato, Swiggy, and Magicpin settlement files across **~180,000 records** at **99.6% match accuracy**.
 
-### 1. ClaritySpend: Intelligent Expense Categorizer
-A full-stack FinTech application designed to auto-categorize thousands of CSV transactions, saving users hours of manual entry.
-* **Architecture:** A Java/Spring Boot back end provides a secure RESTful API (using Spring Security/JWT) that communicates with a separate Python/Flask microservice.
-* **Key Feature:** The Flask microservice hosts a 90% accurate scikit-learn classifier to provide real-time category predictions to the main Java application.
-* **Tech:** Java, Spring Boot, SQL, REST APIs, Python, Flask, scikit-learn, JavaScript, Chart.js
+The work requires writing SQL that handles structural quirks in raw data: dual-row DSR formats, sign-flipped reversal rows, cross-channel grain mismatches — and surfacing discrepancies that finance teams would otherwise miss entirely.
 
-### 2. FitLytics: AI-Powered Wellness Platform
-Re-architected a Python application into a scalable microservice architecture to securely manage over 3,000 workout logs.
-* **Architecture:** Features a robust Java/Spring Boot back end to manage user and activity data in a SQL database, which calls an independent Python/Flask API for AI-driven insights.
-* **Key Feature:** The Flask API serves a 90% accurate scikit-learn model to provide instant, AI-driven calorie burn estimates based on user activity.
-* **Tech:** Java, Spring Boot, SQL, REST APIs, Python, Flask, scikit-learn, JavaScript
+Navigating toward **Data Engineering** from the analyst seat.
 
----
-
-## 💼 Professional Experience
-
-**Data Management Intern** | *Pragyawan Technologies Pvt. Ltd.*
-(Jul 2025 – Sept 2025)
-* Engineered a Python automation tool that streamlined Excel data entry, reducing process time by 40%.
-* Developed an interactive Streamlit dashboard to visualize company payment data.
-* Deployed a Tkinter utility to automate file distribution, saving 5+ hours per week for staff.
-
-**Web Developer** | *99Oranges Technologies*
-(Jul 2024)
-* Built the "Markitell" platform, enabling 100+ students to track GPA trends and receive performance alerts.
-* Engineered core frontend components with HTML, CSS, and JavaScript, ensuring a responsive design.
+```
+Currently   →  Data Analyst Intern @ Koraa.ai, Bengaluru
+Target      →  DA / PA roles → Data Engineer (12–18 months)
+Location    →  Delhi / Bengaluru, India
+Open to     →  Full-time Data Analyst and Business Analyst roles
+```
 
 ---
 
-## 🏆 Achievements & Leadership
+## Tech Stack
 
-* **Chairperson** | *IEEE Robotics and Automation, MSIT* (Oct 2024–Ongoing)
-    * Organizing robotics competitions and workshops, boosting student engagement by 50%.
-* **🥇 1st Place Winner** | *GDSC Tech-A-Thon 3.0, SRCASW*
-    * Led the design of "BizInsights," an AI-powered business planning platform that attracted interest from an angel investor.
-* **🥇 1st Place Winner** | *Delhi Police (West District) Hackathon '24*
-    * Spearheaded the development of "Trojan.AI," a malware-detection extension that achieved 95% threat-identification accuracy.
+**Query Layer**
+
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![AWS Athena](https://img.shields.io/badge/AWS_Athena-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Presto](https://img.shields.io/badge/Presto-5890FF?style=flat-square&logoColor=white)
+
+**Programming & Data**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
+**Tools**
+
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 
 ---
 
-## 📊 My GitHub Stats
+## Featured Projects
+
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [Carbon Tag](https://github.com/shauryaguptagit/carbon-tag-gemini) | Calculates household carbon footprint from utility and grocery bills using Gemini AI | Python, Streamlit, Gemini API, PostgreSQL |
+| [Ozone Guardian](https://github.com/shauryaguptagit/ozone-guardian) | ML dashboard predicting ozone depletion from industrial pollution data | Python, Streamlit, scikit-learn, Plotly |
+| [Pragyawan Automation](https://github.com/shauryaguptagit/pragyawan-tools) | Python scripts replacing manual WhatsApp to Excel workflows at internship | Python, Pandas, Tkinter |
+| [CXO Payment Dashboard](https://github.com/shauryaguptagit/ms-excel-to-dashboard) | Real-time financial dashboard built for CXO-level oversight | Python, Streamlit, Pandas |
+
+---
+
+## GitHub Stats
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=shauryaguptagit&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shauryaguptagit&layout=compact&theme=tokyonight&hide_border=true&hide=java,javascript,css,html" />
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=shauryaguptagit&theme=tokyonight&hide_border=true" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shauryaguptagit&theme=tokyo-night&hide_border=true&area=true" />
+</div>
+
+---
+
+<div align="center">
+  <i>Open to Data Analyst and Product Analyst roles — reach out at guptashaurya2004@gmail.com</i>
+</div>
