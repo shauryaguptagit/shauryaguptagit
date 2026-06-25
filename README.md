@@ -92,25 +92,13 @@ highlight: >
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
 
-## 🌐 3D Contribution Graph
+## 🌐 Contribution Graph
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shauryaguptagit/shauryaguptagit/main/profile-3d-contrib/profile-night-rainbow.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shauryaguptagit/shauryaguptagit/main/profile-3d-contrib/profile-south-season-animate.svg"/>
-    <img src="https://raw.githubusercontent.com/shauryaguptagit/shauryaguptagit/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph"/>
-  </picture>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shauryaguptagit&theme=react-dark&hide_border=true&area=true&radius=10" width="100%"/>
 </div>
 
-## 🏆 Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=shauryaguptagit&theme=onestar&no-frame=true&no-bg=true&margin-w=8&row=1&column=-1"/>
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-
-## 🐍 Contribution Snake
+<br/>
 
 <div align="center">
   <picture>
@@ -118,6 +106,14 @@ highlight: >
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shauryaguptagit/shauryaguptagit/output/github-snake.svg"/>
     <img src="https://raw.githubusercontent.com/shauryaguptagit/shauryaguptagit/output/github-snake-dark.svg" alt="Snake animation" width="100%"/>
   </picture>
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+
+## 🏆 Trophies
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=shauryaguptagit&theme=nord&no-frame=true&no-bg=true&margin-w=8&row=1&column=-1"/>
 </div>
 
 <div align="center">
