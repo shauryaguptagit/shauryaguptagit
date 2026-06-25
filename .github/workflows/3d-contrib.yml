@@ -5,6 +5,9 @@ on:
     - cron: "0 18 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,12 +18,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: |
-            {
-              "githubUserName": "shauryaguptagit",
-              "type": "gitblock"
-            }
-      - name: Commit & Push
+      - name: Commit and Push
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
